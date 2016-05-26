@@ -9,6 +9,9 @@ use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
 
+use yii\helpers\Html;
+use app\models\EntryForm;
+
 class SiteController extends Controller
 {
     public function behaviors()
@@ -91,4 +94,23 @@ class SiteController extends Controller
     {
         return $this->render('about');
     }
+	
+	public function actionSay($message = 'hello')
+	{
+		return Html::encode($message);
+	}
+	
+	public function actionEntry()
+	{
+		$model = new EntryForm;
+		
+		$model->name = '123123';
+		$model->email = '827697478@qq.com';
+
+		if(/*$model->load(Yii::$app->request->post()) && */$model->validate()){
+			var_dump($model->name);
+		} else {
+			var_dump($model);
+		}
+	}
 }
