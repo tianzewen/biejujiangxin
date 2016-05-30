@@ -1,0 +1,52 @@
+.background{
+	position:absolute;
+	width:100%;height:600px;
+	overflow:hidden;
+	z-index:-1;
+}
+.background img{
+	width:100%;
+}
+header{
+	
+}
+nav{
+	margin:0 auto;
+	height:60px;
+}
+.menu{
+	float:left;
+	position:relative;
+	top:30px;
+	width:100px;
+	text-align:center;
+}
+.menu_logoDiv{
+	float:left;
+	width:160px;height:60px;
+}
+.logo_sub{
+	position:relative;
+	left:60px;top:-30px;
+	padding:0 5px;
+	font-size:1.5em;
+}
+.menu_logoDiv img{
+	height:60px;
+}
+.menu a{
+	display:block;
+	margin:6px 10px 0px 10px;padding-bottom:4px;
+}
+.menu ul{
+	display:none;
+}
+.menu:hover ul{
+	display:block;
+}
+.menu:hover a{
+	border-bottom:2px solid blue;
+}
+.user{
+	float:right;
+}
