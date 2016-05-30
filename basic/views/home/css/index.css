@@ -15,8 +15,7 @@ nav{
 	height:60px;
 }
 .menu{
-	float:left;
-	position:relative;
+	position:relative;float:left;
 	top:30px;
 	width:100px;
 	text-align:center;
@@ -24,6 +23,7 @@ nav{
 .menu_logoDiv{
 	float:left;
 	width:160px;height:60px;
+	cursor:pointer;
 }
 .logo_sub{
 	position:relative;
@@ -49,4 +49,24 @@ nav{
 }
 .user{
 	float:right;
+}
+.slider{
+	margin:0 auto;
+	height:540px;
+	background-color:gray;
+}
+.tripe{
+	margin:50px auto;
+	height:400px;
+	background-color:gray;
+}
+footer{
+	width:100%;
+	height:400px;
+	background-color:#C5C5C5;
+}
+.footer{
+	margin:0 auto;
+	height:300px;
+	background-color:gray;
 }
