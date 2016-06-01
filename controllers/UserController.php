@@ -1,0 +1,1 @@
+<?phpnamespace app\controllers;use yii\web\Controller;class UserController extends Controller{		public function actionIndex()	{		return "这就是首页需要的内容吧";	}		/*	 * 注册	 */	public function actionRegister()	{		echo "恭喜";	}}

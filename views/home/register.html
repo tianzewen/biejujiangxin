@@ -7,14 +7,26 @@
 		<meta name="description" content="交流分享有关手工的各种图片教程,定制手工饰品,手工服饰,手工皮革等手工制品"/>
 		<link rel="shortcut icon" type="image/x-icon" href="../public/images/logo.ico"/>
 		<link href="../public/css/core.css" rel="stylesheet"/>
-		<link href="css/index.css" rel="stylesheet"/>
+		<script src="../public/js/jquery.min.js"></script>
+		<script src="../public/js/functions.js"></script>
+		<script src="js/register.js"></script>
+		<style>
+		.box{
+			margin:0 auto;
+			height:500px;width:500px;
+			border:1px solid black;
+		}
+		</style>
 	</head>
 	<body>
-		<form>
-			账号<input name="userid" type="text" /><br/>
+		<form id="useRegisterForm" name="useRegisterForm" method="post" action="http://biejujiangxin.cn/web/user/register">
+			<div class="box">
+			<input type='hidden' name='_csrf' value=""/>
+			个性账号<input name="id" type="text" /><br/>
 			密码<input name="password" type="text" /><br/>
-			确认密码<input type="text" /><br/>
-			<input type="submit" value="注册" />
+			<div onclick="useRegisterSub()" style="border:1px solid black;">注册</div>
+			</div>
+			<input type="submit"/>
 		</form>
 	</body>
 </html>
