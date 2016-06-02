@@ -22,6 +22,7 @@ class HomeController extends Controller
 	注册*/
 	public function actionRegister()
 	{
+		
 		return "这就是首页需要的内容吧";
 	}
 }

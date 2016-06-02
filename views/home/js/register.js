@@ -3,12 +3,14 @@ $(function (){
 	$("input[name='_csrf']").val(csrfToken);
 })
 function useRegisterSub(){
-	var formData = new FormData($("form[name='useRegisterForm']")[0]);
-	console.log(formData);
+	var formData = new FormData(document.getElementById("useRegisterForm"));
+	//console.log(formData);
 	$.ajax({
       type:"post",
 	  url:"http://biejujiangxin.cn/web/user/register",
-	  data:"_csrf=Z1hqNVBLVVgoFjpBIXtsDQ4UWVYILSYZKhoFR2kxHhsVEj9ANgE.MQ==",
+	  data:formData,
+	  processData:false,// 告诉jQuery不要去处理发送的数据
+	  contentType:false,// 告诉jQuery不要去设置Content-Type请求头
 	  async:false,
       success:function(data){
 		  alert(data);
